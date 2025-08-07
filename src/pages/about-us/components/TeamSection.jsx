@@ -64,7 +64,7 @@ const TeamSection = () => {
       ],
       contact: {
         email: "aryan.rhsolution@gmail.com",
-        linkedin: "linkedin.com/in/amitjoshi-rhs"
+        linkedin: "https://www.linkedin.com/in/aryanvirani-rhs"
       }
     },
     {
