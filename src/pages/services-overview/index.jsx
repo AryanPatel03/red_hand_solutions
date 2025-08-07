@@ -4,6 +4,7 @@ import Header from '../../components/ui/Header';
 import Icon from '../../components/AppIcon';
 import Button from '../../components/ui/Button';
 import ServiceCard from './components/ServiceCard';
+import ErrorBoundary from '../../components/ErrorBoundary';
 import ProcessVisualization from './components/ProcessVisualization';
 import ROICalculator from './components/ROICalculator';
 import ComparisonTool from './components/ComparisonTool';
@@ -255,11 +256,23 @@ const ServicesOverview = () => {
               {filteredServices?.length} service{filteredServices?.length !== 1 ? 's' : ''} available
             </p>
           </div>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredServices?.map((service, index) => (
-              <ServiceCard key={service?.id} service={service} index={index} />
-            ))}
+            {(!filteredServices || filteredServices.length === 0) ? (
+              <div className="col-span-full text-center text-muted-foreground py-8">
+                No services available at this time. Please check back later.
+              </div>
+            ) : (
+              filteredServices.map((service, index) => {
+                if (!service || !service.id || !service.title || !service.icon) {
+                  return (
+                    <div key={service?.id || index} className="p-4 bg-yellow-100 text-yellow-800 rounded shadow">
+                      Service information is incomplete.
+                    </div>
+                  );
+                }
+                return <ServiceCard key={service.id} service={service} index={index} />;
+              })
+            )}
           </div>
         </div>
       </section>

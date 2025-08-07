@@ -14,7 +14,7 @@ const AboutUs = () => {
   return (
     <>
       <Helmet>
-        <title>About Us - Red Hand Solutions | Gujarat's Leading IT Solutions Provider</title>
+        <title>Red Hand Solutions | Gujarat's Leading IT Solutions Provider</title>
         <meta 
           name="description" 
           content="Learn about Red Hand Solutions' journey from a Rajkot startup to Gujarat's trusted IT partner. Discover our mission, values, expert team, and commitment to transforming businesses through innovative technology solutions." 

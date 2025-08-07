@@ -80,17 +80,17 @@ const ServiceCard = ({ service, index }) => {
 
         {/* Action Buttons */}
         <div className="flex gap-3">
-          <Button
+        <Button
             variant="default"
             size="sm"
             className="flex-1 bg-gradient-to-r from-secondary to-accent hover:from-secondary/90 hover:to-accent/90"
             iconName="ArrowRight"
             iconPosition="right"
             iconSize={16}
-            asChild
-          >
-            <a href="/contact-consultation">Learn More</a>
-          </Button>
+            onClick={() => window.location.href = '/contact-consultation'}
+        >
+            Learn More
+        </Button>
           <Button
             variant="outline"
             size="sm"

@@ -96,28 +96,28 @@ const HeroSection = () => {
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Icon name="TrendingUp" size={24} className="text-white" />
+                      {Icon && <Icon name="TrendingUp" size={24} className="text-white" />}
                     </div>
                     <h3 className="text-2xl font-bold text-white">98%</h3>
                     <p className="text-gray-300 text-sm">Client Satisfaction</p>
                   </div>
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Icon name="Clock" size={24} className="text-white" />
+                      {Icon && <Icon name="Clock" size={24} className="text-white" />}
                     </div>
                     <h3 className="text-2xl font-bold text-white">6+</h3>
                     <p className="text-gray-300 text-sm">Years Experience</p>
                   </div>
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Icon name="Shield" size={24} className="text-white" />
+                      {Icon && <Icon name="Shield" size={24} className="text-white" />}
                     </div>
                     <h3 className="text-2xl font-bold text-white">100%</h3>
                     <p className="text-gray-300 text-sm">Data Security</p>
                   </div>
                   <div className="text-center">
                     <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-3">
-                      <Icon name="Zap" size={24} className="text-white" />
+                      {Icon && <Icon name="Zap" size={24} className="text-white" />}
                     </div>
                     <h3 className="text-2xl font-bold text-white">24/7</h3>
                     <p className="text-gray-300 text-sm">Support</p>
