@@ -141,7 +141,7 @@ const ProjectCard = ({ project, onViewDetails, onRequestSimilar }) => {
           <Button
             variant="default"
             size="sm"
-            onClick={() => onRequestSimilar(project)}
+            onClick={() => window.open('https://calendly.com/redhand-solution/meeting', '_blank')}
             iconName="MessageSquare"
             iconPosition="left"
             iconSize={14}

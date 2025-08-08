@@ -385,17 +385,9 @@ const IndustrySolutionsSection = () => {
                     className={`bg-gradient-to-r ${industrySolutions?.[activeIndustry]?.color} hover:opacity-90 text-white shadow-brand`}
                     iconName="Calendar"
                     iconPosition="left"
+                    onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
                   >
                     Discuss Your Project
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    fullWidth
-                    iconName="Download"
-                    iconPosition="left"
-                  >
-                    Download Industry Guide
                   </Button>
                 </div>
               </div>

@@ -47,18 +47,17 @@ const CallToAction = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Link to="/contact-consultation">
-                <Button
-                  variant="default"
-                  size="lg"
-                  className="bg-white text-red-600 hover:bg-red-50 shadow-brand-lg px-8 py-4 text-lg font-semibold w-full sm:w-auto"
-                  iconName="Calendar"
-                  iconPosition="left"
-                  iconSize={20}
-                >
-                  Get Free Consultation
-                </Button>
-              </Link>
+              <Button
+                variant="default"
+                size="lg"
+                className="bg-white text-red-600 hover:bg-red-50 shadow-brand-lg px-8 py-4 text-lg font-semibold w-full sm:w-auto"
+                iconName="Calendar"
+                iconPosition="left"
+                iconSize={20}
+                onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
+              >
+                Get Free Consultation
+              </Button>
               <Link to="/portfolio">
                 <Button
                   variant="outline"

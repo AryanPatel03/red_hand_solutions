@@ -55,6 +55,7 @@ const ProjectModal = ({ project, isOpen, onClose, onRequestSimilar }) => {
                     iconPosition="left"
                     iconSize={16}
                     className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white border-white/20"
+                    onClick={() => window.open('https://calendly.com/redhand-solution/meeting', '_blank')}
                   >
                     View Live Demo
                   </Button>

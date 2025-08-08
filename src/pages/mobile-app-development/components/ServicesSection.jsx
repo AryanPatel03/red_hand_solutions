@@ -131,9 +131,30 @@ const ServicesSection = () => {
               Development Services
             </span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
             From native iOS and Android development to cross-platform solutions, we provide end-to-end mobile app development services tailored for Gujarat businesses.
           </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button
+              variant="default"
+              size="lg"
+              className="bg-gradient-to-r from-secondary to-accent hover:from-secondary/90 hover:to-accent/90 shadow-brand-lg"
+              iconName="Calendar"
+              iconPosition="left"
+              onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
+            >
+              Schedule Consultation
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              iconName="MessageCircle"
+              iconPosition="left"
+              onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
+            >
+              Free App Consultation
+            </Button>
+          </div>
         </div>
 
         {/* Services Grid */}
@@ -268,6 +289,7 @@ const ServicesSection = () => {
                   className="bg-gradient-to-r from-secondary to-accent hover:from-secondary/90 hover:to-accent/90 text-white shadow-brand"
                   iconName="Calendar"
                   iconPosition="left"
+                  onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
                 >
                   Schedule Consultation
                 </Button>

@@ -300,7 +300,10 @@ const CompanyCultureSection = () => {
                 <Icon name="Users" size={20} />
                 <span>View Open Positions</span>
               </button>
-              <button className="bg-white border-2 border-gray-300 hover:border-blue-600 text-gray-900 hover:text-blue-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center space-x-2 justify-center">
+              <button
+                className="bg-white border-2 border-gray-300 hover:border-blue-600 text-gray-900 hover:text-blue-600 px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center space-x-2 justify-center"
+                onClick={() => window.open('mailto:redhand.solution@gmail.com?subject=Resume%20for%20Job%20Application')}
+              >
                 <Icon name="Mail" size={20} />
                 <span>Send Your Resume</span>
               </button>

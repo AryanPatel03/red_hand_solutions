@@ -367,6 +367,7 @@ const TechnologyStackSection = () => {
                 className="bg-gradient-to-r from-secondary to-accent hover:from-secondary/90 hover:to-accent/90 text-white shadow-brand"
                 iconName="MessageCircle"
                 iconPosition="left"
+                onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
               >
                 Consult Our Experts
               </Button>

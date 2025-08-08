@@ -193,7 +193,10 @@ const MissionValuesSection = () => {
               Let's discuss how our mission-driven approach can transform your business with innovative technology solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center space-x-2 justify-center">
+              <button
+                className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center space-x-2 justify-center"
+                onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
+              >
                 <Icon name="Calendar" size={20} />
                 <span>Schedule Consultation</span>
               </button>

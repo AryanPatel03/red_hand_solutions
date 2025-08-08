@@ -381,6 +381,19 @@ const AppStoreSuccessSection = () => {
         </div>
 
         {/* CTA Section */}
+        {/* Discuss Custom Solution Button */}
+        <div className="text-center mt-8">
+          <Button
+            variant="default"
+            size="lg"
+            className="bg-gradient-to-r from-secondary to-accent hover:from-secondary/90 hover:to-accent/90 shadow-brand-lg mb-4"
+            iconName="MessageCircle"
+            iconPosition="left"
+            onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
+          >
+            Discuss Custom Solution
+          </Button>
+        </div>
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-secondary to-accent rounded-3xl p-12 text-white">
             <h3 className="text-3xl font-bold mb-4">
@@ -396,6 +409,7 @@ const AppStoreSuccessSection = () => {
                 className="bg-white text-secondary hover:bg-gray-100"
                 iconName="Calendar"
                 iconPosition="left"
+                onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
               >
                 Schedule App Strategy Session
               </Button>

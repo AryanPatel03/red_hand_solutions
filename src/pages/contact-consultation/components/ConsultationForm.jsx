@@ -335,7 +335,7 @@ const ConsultationForm = () => {
             {/* Submit Button */}
             <div className="text-center">
               <Button
-                type="submit"
+                type="button"
                 variant="default"
                 size="lg"
                 loading={isSubmitting}
@@ -343,6 +343,7 @@ const ConsultationForm = () => {
                 iconName="Send"
                 iconPosition="right"
                 iconSize={20}
+                onClick={() => window.open('https://calendly.com/redhand-solution/meeting', '_blank')}
               >
                 {isSubmitting ? 'Submitting...' : 'Schedule Free Consultation'}
               </Button>

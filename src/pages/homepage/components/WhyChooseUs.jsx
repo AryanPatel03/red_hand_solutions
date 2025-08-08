@@ -133,7 +133,10 @@ const WhyChooseUs = () => {
               Join 85+ successful businesses across Gujarat who trust Red Hand Solutions for their digital transformation journey.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-brand hover:shadow-brand-lg transition-brand">
+              <button
+                className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-brand hover:shadow-brand-lg transition-brand"
+                onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
+              >
                 Get Free Consultation
               </button>
               <button className="border-2 border-white/20 text-white hover:bg-white hover:text-black px-8 py-4 rounded-xl font-semibold text-lg transition-brand">

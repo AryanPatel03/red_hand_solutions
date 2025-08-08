@@ -62,6 +62,7 @@ const ContactHero = () => {
               iconName="Calendar"
               iconPosition="left"
               iconSize={20}
+          onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
             >
               Schedule Free Consultation
             </Button>

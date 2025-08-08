@@ -405,6 +405,7 @@ The platform provides real-time visibility into manufacturing operations, automa
               iconPosition="left"
               iconSize={20}
               className="bg-white text-secondary hover:bg-white/90"
+              onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
             >
               Schedule Free Consultation
             </Button>
@@ -415,6 +416,7 @@ The platform provides real-time visibility into manufacturing operations, automa
               iconPosition="left"
               iconSize={20}
               className="border-white text-white hover:bg-white/10"
+              onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
             >
               Discuss Your Project
             </Button>

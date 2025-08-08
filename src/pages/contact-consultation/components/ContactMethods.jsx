@@ -83,6 +83,9 @@ const ContactMethods = () => {
       case "Mail":
         window.open(`mailto:${method?.primary}`);
         break;
+      case "Calendar":
+        window.open('https://calendly.com/redhand-solution/30min', '_blank');
+        break;
       default:
         console.log(`${method?.title} clicked`);
     }
@@ -178,16 +181,18 @@ const ContactMethods = () => {
               iconName="Phone"
               iconPosition="left"
               iconSize={16}
+              onClick={() => window.open('tel:+917226802978')}
             >
-              Emergency: +91 99999 00000
+              Emergency: +91 72268 02978
             </Button>
             <Button
               variant="outline"
               iconName="Mail"
               iconPosition="left"
               iconSize={16}
+              onClick={() => window.open('mailto:contact.redhandsolution@gmail.com')}
             >
-              urgent@redhandsolutions.com
+              contact.redhandsolution@gmail.com
             </Button>
           </div>
         </div>

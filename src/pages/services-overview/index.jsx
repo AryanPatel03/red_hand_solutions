@@ -189,6 +189,7 @@ const ServicesOverview = () => {
                 className="bg-gradient-to-r from-secondary to-accent hover:from-secondary/90 hover:to-accent/90 shadow-brand-lg"
                 iconName="Calendar"
                 iconPosition="left"
+                onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
               >
                 Schedule Consultation
               </Button>
@@ -312,23 +313,22 @@ const ServicesOverview = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact-consultation">
-              <Button
-                variant="default"
-                size="lg"
-                className="bg-gradient-to-r from-secondary to-accent hover:from-secondary/90 hover:to-accent/90 shadow-brand-lg"
-                iconName="MessageCircle"
-                iconPosition="left"
-              >
-                Start Free Consultation
-              </Button>
-            </Link>
+            <Button
+              variant="default"
+              size="lg"
+              className="bg-gradient-to-r from-secondary to-accent hover:from-secondary/90 hover:to-accent/90 shadow-brand-lg"
+              iconName="MessageCircle"
+              iconPosition="left"
+              onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
+            >
+              Start Free Consultation
+            </Button>
             <Button
               variant="outline"
               size="lg"
               iconName="Calendar"
               iconPosition="left"
-              onClick={() => window.open('https://calendly.com/redhand-solution/meeting', '_blank')}
+              onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
             >
               Schedule Meeting
             </Button>

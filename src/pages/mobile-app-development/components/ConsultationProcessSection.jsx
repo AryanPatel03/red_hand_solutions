@@ -164,7 +164,12 @@ const ConsultationProcessSection = () => {
             {consultationSteps?.map((step, index) => (
               <button
                 key={step?.id}
-                onClick={() => setActiveStep(index)}
+                onClick={() => {
+                  setActiveStep(index);
+                  if (step?.id === 'initial-consultation') {
+                    window.open('https://calendly.com/redhand-solution/30min', '_blank');
+                  }
+                }}
                 className={`flex items-center space-x-3 px-6 py-3 rounded-full transition-all duration-300 ${
                   activeStep === index
                     ? `bg-gradient-to-r ${step?.color} text-white shadow-brand`

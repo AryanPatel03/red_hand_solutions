@@ -295,6 +295,7 @@ const InteractiveDemoSection = () => {
                     variant="outline"
                     iconName="MessageCircle"
                     iconPosition="left"
+                    onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
                   >
                     Discuss Similar Project
                   </Button>
@@ -319,6 +320,7 @@ const InteractiveDemoSection = () => {
               className="bg-gradient-to-r from-secondary to-accent hover:from-secondary/90 hover:to-accent/90 text-white shadow-brand"
               iconName="Calendar"
               iconPosition="left"
+              onClick={() => window.open('https://calendly.com/redhand-solution/30min', '_blank')}
             >
               Schedule Free Consultation
             </Button>

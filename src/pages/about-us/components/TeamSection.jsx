@@ -12,7 +12,7 @@ const TeamSection = () => {
       name: "Prayag Sapariya",
       position: "Founder & CEO",
       experience: "12+ Years",
-      image: "/assets/images/Pns W.webp",
+      image: "https://res.cloudinary.com/dzgte50ye/image/upload/v1754633464/Passport_uyupab.jpg",
       specializations: ["Strategic Planning", "Business Development", "Client Relations", "Technology Vision"],
       certifications: ["MBA - IIM Ahmedabad", "AWS Solutions Architect", "Google Cloud Professional"],
       bio: `Prayag founded Red Hand Solutions with a vision to democratize technology access for Gujarat businesses. With over 12 years of experience in IT consulting and business development, he has led the company from a 3-person startup to Gujarat's leading IT solutions provider.\n\nHis expertise in strategic planning and deep understanding of the local business landscape has been instrumental in building long-term client relationships and driving sustainable growth.`,
@@ -32,7 +32,7 @@ const TeamSection = () => {
       name: "Priyansh Baldha",
       position: "CTO & Lead Architect",
       experience: "10+ Years",
-      image: "/assets/images/Psb W.webp",
+      image: "https://res.cloudinary.com/dzgte50ye/image/upload/v1754633464/PB-Web_rah4ds.jpg",
       specializations: ["System Architecture", "Cloud Solutions", "AI/ML Implementation", "DevOps"],
       certifications: ["AWS Solutions Architect Professional", "Google Cloud Architect", "Microsoft Azure Expert"],
       bio: `Priyansh leads our technical vision and ensures that Red Hand Solutions stays at the forefront of technology innovation. With a Master's in Computer Science from NIT Surat and extensive experience in enterprise architecture, she has designed scalable solutions for clients across various industries.\n\nHer expertise in cloud technologies and emerging tech like AI/ML has enabled our clients to achieve significant competitive advantages through digital transformation.`,
@@ -52,7 +52,7 @@ const TeamSection = () => {
       name: "Aryan Virani",
       position: "Head of Development",
       experience: "8+ Years",
-      image: "/assets/images/Asv W.webp",
+      image: "https://res.cloudinary.com/dzgte50ye/image/upload/v1754633464/Asv-W_v722rc.jpg",
       specializations: ["Full-Stack Development", "Mobile Apps", "Web Applications", "API Development"],
       certifications: ["React Certified Developer", "Node.js Professional", "MongoDB Certified"],
       bio: `Aryan oversees all development activities and ensures code quality across projects. With expertise in modern web technologies and mobile app development, he has successfully delivered complex applications for clients ranging from startups to large enterprises.\n\nHis focus on clean code practices and agile methodologies has resulted in highly maintainable and scalable applications that continue to serve our clients' evolving needs.`,
@@ -334,11 +334,21 @@ const TeamSection = () => {
                   </div>
 
                   <div className="flex space-x-4">
-                    <button className="flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition-colors duration-200">
+                    <button
+                      className="flex items-center space-x-2 bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-lg transition-colors duration-200"
+                      onClick={() => window.open(`mailto:${selectedMember?.contact?.email}`)}
+                    >
                       <Icon name="Mail" size={16} />
                       <span>Contact</span>
                     </button>
-                    <button className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200">
+                    <button
+                      className="flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200"
+                      onClick={() => {
+                        let url = selectedMember?.contact?.linkedin;
+                        if (url && !url.startsWith('http')) url = 'https://' + url;
+                        window.open(url, '_blank');
+                      }}
+                    >
                       <Icon name="Linkedin" size={16} />
                       <span>LinkedIn</span>
                     </button>
